@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="start" />
+
+    <SeekBar
+        android:id="@+id/sb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bt_start"
+        android:layout_marginTop="84dp" />
+
+    <Button
+        android:id="@+id/bt_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bt_start"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26dp"
+        android:text="up" />
+
+    <Button
+        android:id="@+id/bt_loop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bt_up"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="106dp"
+        android:text="loop" />
+
+    <Button
+        android:id="@+id/bt_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/bt_up"
+        android:text="down" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_start"
+        android:layout_alignBottom="@+id/bt_start"
+        android:layout_centerHorizontal="true"
+        android:text="pause" />
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause"
+        android:layout_alignBottom="@+id/bt_pause"
+        android:layout_marginLeft="63dp"
+        android:layout_toRightOf="@+id/bt_pause"
+        android:text="stop" />
+
+</RelativeLayout>

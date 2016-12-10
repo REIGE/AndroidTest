@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:textAppearance="@android:style/TextAppearance.Large" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_rid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="账号"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_idinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_rid"
+            android:layout_alignBottom="@+id/tv_rid"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp"
+            android:text="*八位数字或字母组合"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_rid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_idinfo"
+            android:layout_toRightOf="@+id/tv_rid"
+            android:inputType="text"
+            android:maxLength="8"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_rpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="密码"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_passwordinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_rpassword"
+            android:layout_alignBottom="@+id/tv_rpassword"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp"
+            android:text="*八位数字或字母组合"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_rpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_passwordinfo"
+            android:layout_toRightOf="@+id/tv_rpassword"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_rpassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="确认密码"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_rpassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_rpassword2"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_remail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="邮箱"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_emailinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_remail"
+            android:layout_alignBottom="@+id/tv_remail"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp"
+            android:text="*可用于找回密码"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_remail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_emailinfo"
+            android:layout_toRightOf="@+id/tv_remail"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_rphonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="手机号码"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/tv_phonenuminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_rphonenum"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/et_rphonenum"
+            android:paddingRight="15dp"
+            android:text="获取验证码"
+            android:textSize="8sp" 
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/et_rphonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_rphonenum"
+            android:layout_toLeftOf="@id/tv_phonenuminfo"
+            android:ems="11"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="15sp" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_rnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"
+            android:text="验证码"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_rnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_rnum"
+            android:ems="6"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/bt_rconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/bt_rcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bu_rconfirm"
+            android:layout_alignBottom="@+id/bu_rconfirm"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="取消" />
+    </RelativeLayout>
+
+</LinearLayout>
